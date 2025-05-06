@@ -34,6 +34,6 @@ def get_full_name_from_first(first_name):
     data = response.json().get("programmers", [])
     if data:
         programmer = data [0]
-        return f"{programmer['first']}{programmer['last']}"
+        return f"{programmer['first']} {programmer['last']}"
     else:
         return None
